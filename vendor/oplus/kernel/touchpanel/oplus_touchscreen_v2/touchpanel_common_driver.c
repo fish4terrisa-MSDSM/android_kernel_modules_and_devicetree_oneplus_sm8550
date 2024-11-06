@@ -4217,6 +4217,7 @@ void unregister_common_touch_device(struct touchpanel_data *pdata)
 	struct touchpanel_data *ts = pdata;
 #if IS_ENABLED(CONFIG_FB) || IS_ENABLED(CONFIG_DRM_MSM) || IS_ENABLED(CONFIG_DRM_OPLUS_NOTIFY)
 	int ret;
+	(void)ret;
 #endif
 
 	if (!pdata) {
