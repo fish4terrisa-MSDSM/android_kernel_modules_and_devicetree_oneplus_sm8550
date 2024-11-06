@@ -3263,7 +3263,7 @@ static int syna_dev_remove(struct platform_device *pdev)
 	struct syna_tcm *tcm = platform_get_drvdata(pdev);
 #if IS_ENABLED(CONFIG_DRM_OPLUS_PANEL_NOTIFY)|| IS_ENABLED(CONFIG_DRM_MSM)\
 ||IS_ENABLED(CONFIG_DRM_OPLUS_NOTIFY) || IS_ENABLED(CONFIG_FB)
-	int ret = 0;
+	int _ret = 0;
 #endif
 
 	if (!tcm) {
